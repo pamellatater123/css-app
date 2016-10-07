@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+*{padding:0; margin:0;}
+body{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#1491c1; background:url(bg.jpg) repeat;}
+img{border:none;}
+h1{ font-family: 'Droid Serif', serif; font-weight:normal; color:#fff;}
+h2{ font-family: 'Droid Serif', serif; font-weight:normal; color:#fff; font-size:18px;}
+P{ line-height:20px;}
+a{text-decoration:none; color:#1491c1;}
+a:hover{color:#fff;}
+
+.header-wrap{ background:#083266; height:100px; border-style: dotted; color:yellow;}
+.header { width:960px; color:red; border-style: dotted; margin: 0 auto;}
+.logo{ float:inherit;background:#1491c1; width:200px; border-style: dotted; color: yellow}
+.menu{float: left;}
+.menu ul li {float: left; list-style: none; border-right: #093e76 solid:1px; padding: 115px 20px 30px 20px;}
+.menu ul li a {text-decoration: none; color: #80d2f8; font-size: 14px; text-align: center;}
+.menu ul li a:hover{color: #1491c1;}
+.menu ul li a:active{color: #1491c1;}
+.wrap{width:960px; margin:0 auto;overflow:hidden;}
+.search{ background:url(search-bg.jpg) repeat-x center; width:260px; padding:18px 20px 25px 20px; margin-bottom:22px; overflow:hidden;}
+.search-input{ float:left;}
+.input-style{ background:#07366b; text-decoration:5px; font-family:Arial, Helvetica, sans-serif; color:#1491c1; font-size:13px; border:none; height:34px; width:219px;}
+.search-btn{ float:left;}
+.search h1{ font-size:20px; padding-bottom:18px;}
+.block{padding:20px 20px 20px 20px; margin:0 auto;}
+.block2{padding:20px 20px 20px 20px; margin:0 auto;}
+.panel{}
+.content{}
+.leftcol{ float:left; width:300px; overflow:hidden;}
+.leftcol .title{ margin-bottom:25px;}
+.leftcol .content ul li{ list-style:none; border-bottom:#0c4680 solid 1px; line-height:40px;}
+.leftcol .content ul li a{ text-decoration:none; color:#1491c1;}
+.leftcol .content ul li a:hover{color:#80d2f8;}
+.leftcol .panel img{ float:left; border:#fff solid 4px; margin:9px 20px 0px 0px;}
+.leftcol .panel .content{ color:#1491c1; overflow:hidden;}
+.leftcol .panel .content .button a{ width:53px; height:24px; line-height:24px; float:left; margin:15px 0px 20px 0px;}
+.block2 .panel{border-bottom:#0c4680 solid 1px; margin-bottom:18px;}
+.title{}
+.button a{text-decoration:none; display:block; width:70px; height:30px; background:#1491c1; color:#ffffff; font-family:Arial, Helvetica, sans-serif; line-height:30px; text-align:center;}
+.button a:hover{ background:#0e5295;}
+-------------------------------------------------*/
+.rightcol {float:left; width:660px; overflow:hidden;}
+.rightcol .title{ margin-bottom:25px;}
+.rightcol .button{ margin-top:0px;}
+.rightcol img{ float:left; margin-right:40px;}
+.rightcol .content p{ padding-bottom:30px;}
+.button2 a{text-decoration:none; display:block; width:70px; height:30px; background:#1491c1; color:#ffffff; font-family:Arial, Helvetica, sans-serif; line-height:30px; text-align:center; float:left;}
+.button2 a:hover{ background:#0e5295;}
+.banner{ margin-bottom:50px; width: 660px; overflow: hidden;}
+.banner img{ border:none;}
+.page{ width:580px; margin:0 auto; overflow:hidden; padding-bottom:50px;}
+.mar-bottom{ margin-bottom:40px;}
+.box{ width:230px; background:#083266; padding:20px 20px 35px 20px; float:left;}
+.box img{ margin-bottom:25px;}
+.box .title{margin-bottom:20px;}
+.box .title h1{ font-size:20px; font-weight:normal;}
+.clearing { clear:both;}
+/*-------------------------------------------------
+FOOTER CLASSES
+-------------------------------------------------*/
+.footer-wrap{ background:#1491c1; overflow:hidden;}
+.footer{ width:960px; margin:0 auto; padding:40px 0px 50px 0px; overflow:hidden;}
+.footer .bolg{ width:598px; float:left;}
+.footer .panel{ float:left; width:230px;}
+.footer .title{ border-bottom:#107eb4 solid 1px; padding-bottom:20px; margin-bottom:30px;}
+.footer .title h1{ font-size:20px;}
+.footer .panel .content ul li{ float:left; list-style:none; color:#062c5b; font-weight:bold;}
+.footer .panel .content p{ color:#fff; font-size:12px; line-height:inherit; padding-top:20px; clear:both;}
+.footer .panel .content p a{color:#062c5b; text-decoration:none;}
+.footer .panel .content p a:hover{ color:#fff;}
+.footer .panel .content p span{ color:#062c5b; font-weight:bold; font-size:12px;}
+.footer .quickcontact{ width:270px; float:right;}
+
+.copyright-wrap{ background:#fff; overflow:hidden; padding-top:30px; padding-bottom:30px;}
+.copyright{ width:960px; margin:0 auto;}
+.copyright .content{ text-align:center;}
+.copyright .content a{ text-decoration:none; color:#1491c1;}
+.copyright .content a:hover{color:#062c5b;}
+.copyright .content a.active{color:#062c5b;}
+.bor-bottm-non{border-bottom:none!important;}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header-wrap">
+	<div class="header">
+		<div class="logo"><h1>Sitename</h1></div>
+		<div class="menu">
+        	<ul>
+        		<li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us          </a></li>
+                <li><a href="services.html">Services          </a></li>
+                <li><a href="solutions.html">Solutions          </a></li>
+                <li><a href="contact.html">Contact</a></li>
+        	</ul>
+        </div>
+	</div>
+</div><!---header-wrap--->
+
+<div class="wrap">
+	<div class="leftcol">
+		<div class="search">
+			<div class="title">
+            	<h1>Site Search</h1>
+                <div class="search-input"><input name="" type="text" class="input-style"/></div>
+                <div class="search-btn"><img src="images/search-btn.jpg" alt="search" /></div>
+            </div>
+        </div>
+
+		<div class="block">
+        	<div class="panel">
+            	<div class="title">
+                	<h1>Itaque Earum</h1>
+                </div>
+                <div class="content">
+                	<ul>
+                    	<li><a href="#">Sed do eiusmod tempor incididunt ut </a></li>
+                        <li><a href="#">Praesent sit amet purus ac ligula tem </a></li>
+                        <li><a href="#">Nam convallis mauris id eros condiment</a></li>
+                        <li><a href="#">Donec a sem sit amet neque iaculis p</a></li>
+                        <li><a href="#">Duis sit amet augue ut urna auctor rut</a></li>
+                        <li><a href="#">Ut fringilla scelerisque enim, nec he</a></li>
+                        <li class="bor-bottm-non"><a href="#">Donec vitae magna in turpis congue</a></li>
+                	</ul>
+                </div>
+        	</div>
+		</div>
+        
+        <div class="block2">
+        	<div class="title"><h1>Sem potiniot</h1></div>
+            	<div class="panel">
+                    <img src="images/image1.jpg" alt="image" />
+                    <div class="content">
+                    	<p>Cuo minus id quod maxime placeat auctoern</p>
+                        <div class="button"><a href="#">More</a></div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <img src="images/image2.jpg" alt="image" />
+                    <div class="content">
+                    	<p>Cuo minus id quod maxime placeat auctoern</p>
+                        <div class="button"><a href="#">More</a></div>
+                    </div>
+                </div>
+                <div class="panel bor-bottm-non">
+                    <img src="images/image3.jpg" alt="image" />
+                    <div class="content">
+                    	<p>Cuo minus id quod maxime placeat auctoern</p>
+                        <div class="button"><a href="#">More</a></div>
+                    </div>
+                </div>
+            </div>
+	</div><!---leftcol--->
+
+
+<div class="rightcol">
+	<div class="banner"><img src="images/banner.jpg" alt="banner" /></div>
+	<div class="page">
+		<div class="panel mar-bottom">
+			<div class="title">
+            	<h1>Phasellus sit amet libero odio</h1>
+                <h2>Vestibulum in augue sed metus venenatis convallis sit</h2>
+            </div>
+            <div class="content">
+            	<p>Nulla id augue leo, sed bibendum eros. Fusce mollis, nibh vitae tempus vehicula, urna nisi dapibus urna, id egestas enim ipsum sit amet erat. Suspendisse quis imperdiet sem. 
+                 Proin nulla purus, porttitor id porttitor tristique, aliquam id diam. Sed augue dolor.</p>
+                 <div class="button"><a href="#">More Info</a></div>
+            </div>
+        </div>
+        <div class="box mar-Right">
+        	<div class="panel">
+        		<img src="images/image4.jpg" alt="image" />
+        		<div class="title">
+                	<h1>Umator seler</h1>
+                </div>
+                <div class="content">
+                	<p>Suspendisse interdum tellus vel tortor vestibulum eget auctor ante euismodlla ac nisl iaculi</p>
+                    <div class="button"><a href="#">More Info</a></div>
+                </div>
+        	</div>
+        </div>
+        <div class="box">
+        	<div class="panel">
+        		<img src="images/image5.jpg" alt="image" />
+        		<div class="title">
+                	<h1>Umator seler</h1>
+                </div>
+                <div class="content">
+                	<p>Suspendisse interdum tellus vel tortor vestibulum eget auctor ante euismodlla ac nisl iaculi</p>
+                    <div class="button"><a href="#">More Info</a></div>
+                </div>
+        	</div>
+        </div>
+        <div class="clearing"></div>
+        <div class="panel mar-top">
+			<div class="title">
+            	<h1>Cras vestibulum ligula sit</h1>
+                <h2>Duis in odio ac justo feugiat venenatis eget lacuil </h2>
+            </div>
+            <img src="images/image6.jpg" alt="image" />
+            <div class="content">
+            	<p>Donec eros lectus, elementum quis commodo a, lobortis ut mauris. Duis leo risus, fermentum facilisis auctor tempus, elementum ut enim. Maecenas ornare tincidunt semper. Nulla facilisi. </p>
+                <p>In tristique tellus vel nisi sagittis id bibe ndum tellus varius auris conva</p>
+                 <div class="button2"><a href="#">More Info</a></div>
+            </div>
+        </div>
+	</div><!---page--->
+</div><!---Rightcol--->
+</div>
+<div class="footer-wrap">
+	<div class="footer">
+		<div class="bolg">
+            <div class="title">
+            	<h1>From Our Bolg</h1>
+            </div>
+        	<div class="panel mar-right115">
+            <div class="content">
+            	<ul>
+                	<li><img src="images/icon1.png" alt="icon" /></li>
+                    <li>Jonathan Jah<br />Nov.2012</li>
+            	</ul>
+                <p>Nulla nisi urna, egestas non fringilla vitae, molestie vel leo. Proin hendrerit, turpis eu aliquet t in dapibus et, iaculis ac arc.</p>
+                <p><a href="#">Read More + </a></p>
+            </div>
+           </div> 
+           
+           <div class="panel">
+            <div class="content">
+            	<ul>
+                	<li><img src="images/icon1.png" alt="icon" /></li>
+                    <li>Jonathan Jah<br />Nov.2012</li>
+            	</ul>
+                <p>We clearly help you figure out the number of pages and then include a fee of 1 hour of work per page at our hourly.</p>
+                <p><a href="#">Read More + </a></p>
+            </div>
+           </div>
+        </div>
+        
+        <div class="quickcontact">
+        	<div class="title">
+            	<h1>Quick Contact</h1>
+            </div>
+			<div class="panel">
+            <div class="content">
+            	<ul>
+                    <li>Nulla ormare tins<br />sagtis idbibe dumtellus</li>
+            	</ul>
+                <p>Ultrices posuere cubilia Curae;
+				Vestibulum eget libero a felis iaculis fringilla</p>
+                <p><span>Tel: (000) 888 88888888</span></p>
+            </div>
+           </div>
+        </div>
+    </div>
+</div><!---footer--->
+<div class="copyright-wrap">
+	<div class="copyright">
+    	<div class="content">
+        	<p>© 2012 All Rights Reserved  |  Privacy Policy   
+            Designed by :<a href=" www.alltemplateneeds.com." class="active"> www.alltemplateneeds.com.</a>   
+             Images From:<a href=" www.photorack.net"> www.photorack.net</a></p>
+        </div>
+    </div>
+</div><!---copyright-wrap--->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
